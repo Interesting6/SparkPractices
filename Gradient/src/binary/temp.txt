@@ -1,0 +1,107 @@
+package binary
+
+import java.lang.System.currentTimeMillis
+
+import org.apache.log4j.{Level, Logger}
+import org.apache.spark.mllib.classification.LogisticRegressionModel
+import org.apache.spark.mllib.evaluation.BinaryClassificationMetrics
+import org.apache.spark.mllib.linalg.Vectors
+import org.apache.spark.mllib.optimization.{LBFGS, LogisticGradient, SquaredL2Updater}
+import org.apache.spark.mllib.util.MLUtils
+import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.spark.mllib.regression.{LabeledPoint=>LP}
+
+/**
+ * -*- coding: utf-8 -*-
+ *
+ * @File : LbfgsBinaryExample
+ * @set_param training : The training data in form of LibSVM
+ * @set_param test: The label of data in form of LibSVM
+ * @set_param InitialWeight : The initial weight in form of Vector
+ * @return weightsWithIntercept : The solving weights after iteration.
+ * @return model : LogisticRegressionModel after training.
+ * @return metrixs  : The matrix for evaluations on test data.
+ * @Author: linasun
+ * @Date : 2020/4/1
+ * @Desc : The binary
+ */
+object LbfgsBinaryExample  {
+  def main(args : Array[String]){
+    Logger.getLogger("org.apache.spark").setLevel(Level.WARN)
+    Logger.getLogger("org.apache.eclipse.jetty.server").setLevel(Level.OFF)
+    val conf =new SparkConf().setAppName("WordCountScala").set("spark.driver.maxResultSize","500g").setMaster("local");
+    val sc = new SparkContext(conf);
+    def trans(x:Double):Double={
+      if (x== -1) 0
+      x
+    }
+    val path =  "E:\\Datasets\\work3\\data\\Adult"
+    val data = MLUtils.loadLibSVMFile(sc, path)
+//    val datat = data.map{ f=>(if (f.label<=0) 0 else 1, f.features) }
+    val m = data.count().toDouble
+    println(s"Number of samples: $m")
+    val firstElem = data.take(1)(0)
+    val numFeatures = firstElem.features.size
+    println(s"Number of Features: $numFeatures")
+    // Split data into training (60%) and test (40%).
+    val splits = data.randomSplit(Array(0.6, 0.4), seed = 11L)
+    val training=splits(0).map{ x => LP(x.label, MLUtils.appendBias(x.features)) } .cache()
+    val training_1stElem = training.take(1)
+    println("traning first element: "+training_1stElem)
+    val test = splits(1)
+    val tic1 = currentTimeMillis();
+    val numCorrections = 10
+    val convergenceTol = 1e-5
+    val maxNumIterations = 100
+    val regParam = 0.1
+    val initialWeightsWithIntercept = Vectors.dense(new Array[Double](numFeatures + 1))
+
+    val (weightsWithIntercept, loss) = LBFGS.runLBFGS(
+      training,
+      new LogisticGradient(),
+      new SquaredL2Updater(),
+      numCorrections,
+      convergenceTol,
+      maxNumIterations,
+      regParam,
+      initialWeightsWithIntercept)
+
+    val model = new LogisticRegressionModel(
+      Vectors.dense(weightsWithIntercept.toArray.slice(0, weightsWithIntercept.size - 1)),
+      weightsWithIntercept(weightsWithIntercept.size - 1))
+
+    // Clear the default threshold.
+    model.clearThreshold()
+
+    // Compute raw scores on the test set.
+    val scoreAndLabels = test.map { point =>
+      val score = model.predict(point._2)
+      (score, trans(point._1.toDouble))
+    }
+
+    // Get evaluation metrics.
+    val metrics = new BinaryClassificationMetrics(scoreAndLabels)
+
+    val auROC = metrics.areaUnderROC()
+    val auPR = metrics.areaUnderPR()
+//    metrics.roc()
+    val precision = metrics.precisionByThreshold
+    val recall = metrics.recallByThreshold
+    val f1Score = metrics.fMeasureByThreshold
+
+//    val acc = scoreAndLabels.map { case (d, d1) => d }
+
+//    val acc = metrics.accuracy
+
+    println("Loss of each step in training process")
+    loss.foreach(println)
+    println(s"Area under ROC = $auROC")
+    println(s"Area under PR = $auPR")
+    println(s"recall = $recall")
+    println(s"precision = $precision")
+    println(s"f1 = $f1Score")
+
+    val tic2 = currentTimeMillis();
+    println("10 Times cost time is : "+(tic2-tic1))
+  }
+}

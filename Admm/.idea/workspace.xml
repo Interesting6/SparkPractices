@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aec8af42-98dd-494f-beb4-a939650f8307" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1avlHBKDlccMGSCPgjlVoFEFDea" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProximalAlgorithm" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cym11\Desktop\大数据分析与处理方法第1-3次课程\大数据分析与处理方法第二次实验课程：正则化方法\程序\optimization\Admm" />
+      <recent name="C:\Users\cym11\Desktop\大数据分析与处理方法第1-3次课程\大数据分析与处理方法第二次实验课程：正则化方法\程序\optimization\Admm\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cym11\Desktop\大数据分析与处理方法第1-3次课程\大数据分析与处理方法第二次实验课程：正则化方法\程序\optimization\Admm" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="AdmmDataGroup" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="AdmmDataGroup" />
+      <module name="Admm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AdmmDataGroup" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="E:/工作资料/平台建设/基础算法/spark程序/workspace/spark-lp-master" value="PREVIEW" />
+        <entry key="E:/工作资料/平台建设/基础算法/spark程序/workspace/spark-tfocs-master/spark-tfocs-master" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aec8af42-98dd-494f-beb4-a939650f8307" name="Default Changelist" comment="" />
+      <created>1587105128514</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587105128514</updated>
+      <workItem from="1587105130110" duration="2185000" />
+      <workItem from="1587623859192" duration="300000" />
+      <workItem from="1588333256070" duration="42000" />
+      <workItem from="1588333332851" duration="5044000" />
+      <workItem from="1588407299462" duration="4269000" />
+      <workItem from="1588414773561" duration="8237000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

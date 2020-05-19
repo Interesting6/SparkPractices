@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="OtherLib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/otherlib/lightgbmlib-2.3.150.jar!/" />
+      <root url="jar://$PROJECT_DIR$/otherlib/mmlspark_2.11-HEAD-20200415-0958.jar!/" />
+      <root url="jar://$PROJECT_DIR$/otherlib/xgboost4j-0.90-criteo-20190702_2.11-win64.jar!/" />
+      <root url="jar://$PROJECT_DIR$/otherlib/xgboost4j-spark-0.90-criteo-20190702_2.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

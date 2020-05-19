@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5e3252b5-753d-4e0b-a98c-a14f8bcdc1a2" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Object" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1aeybQPV4tJ8Fifx31UXrloP1iR" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../experiment4/Experiment4" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cym11\Desktop\大数据分析与处理方法第1-3次课程\大数据分析与处理方法第三次实验课程：lbfgs算法\程序\classifity-2\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.SplashMultipleExample">
+    <configuration name="LbfgsBinaryExample" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="binary.LbfgsBinaryExample" />
+      <module name="classifity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="binary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LbfgsMultipleExample" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="multiple.LbfgsMultipleExample" />
+      <module name="classifity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="multiple.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogisticRegressionWithElasticNetExample" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="binary.LogisticRegressionWithElasticNetExample" />
+      <module name="classifity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="binary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SplashBinaryExample" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="binary.SplashBinaryExample" />
+      <module name="classifity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="binary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SplashMultipleExample" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="multiple.SplashMultipleExample" />
+      <module name="classifity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="multiple.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SplashMultipleExample" />
+        <item itemvalue="Application.LbfgsMultipleExample" />
+        <item itemvalue="Application.LbfgsBinaryExample" />
+        <item itemvalue="Application.SplashBinaryExample" />
+        <item itemvalue="Application.LogisticRegressionWithElasticNetExample" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="E:/工作资料/平台建设/基础算法/spark程序/workspace/spark-lp-master" value="PREVIEW" />
+        <entry key="E:/工作资料/平台建设/基础算法/spark程序/workspace/spark-tfocs-master/spark-tfocs-master" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e3252b5-753d-4e0b-a98c-a14f8bcdc1a2" name="Default Changelist" comment="" />
+      <created>1587110424308</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587110424308</updated>
+      <workItem from="1587110426974" duration="699000" />
+      <workItem from="1587452034857" duration="12744000" />
+      <workItem from="1587623270708" duration="637000" />
+      <workItem from="1588411950992" duration="4996000" />
+      <workItem from="1588424190797" duration="5064000" />
+      <workItem from="1588473307628" duration="4736000" />
+      <workItem from="1588492448636" duration="259000" />
+      <workItem from="1588493431527" duration="19424000" />
+      <workItem from="1588578848268" duration="303000" />
+      <workItem from="1588579343964" duration="40520000" />
+      <workItem from="1589082360478" duration="621000" />
+      <workItem from="1589083972180" duration="663000" />
+      <workItem from="1589163031125" duration="500000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

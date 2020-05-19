@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Fista">
+    <output-path>$PROJECT_DIR$/out/artifacts/Fista</output-path>
+    <root id="archive" name="Fista.jar">
+      <element id="module-output" name="Fista" />
+    </root>
+  </artifact>
+</component>

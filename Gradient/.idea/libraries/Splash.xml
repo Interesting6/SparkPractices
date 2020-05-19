@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Splash">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Splash.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
